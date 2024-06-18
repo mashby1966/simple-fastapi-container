@@ -13,4 +13,4 @@ async def generate_name(starts_with: str = None):
     if starts_with:
         name_choices = [name for name in names if name.lower().startswith(starts_with.lower())]
     random_name = random.choice(name_choices)
-    return {"name": random_name}
+    return {"name": random_name,"id":1234}
